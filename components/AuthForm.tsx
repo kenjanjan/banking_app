@@ -38,7 +38,7 @@ const AuthForm = ({ type }: { type: string }) => {
       email: "",
       password: "",
     },
-  });
+});
 
   // 2. Define a submit handler.
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
@@ -56,7 +56,7 @@ const AuthForm = ({ type }: { type: string }) => {
           email: data.email,
           password: data.password
         })
-
+        console.log(response, 'response')
         if (response)router.push('/')
       }
     } catch (error) {
