@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import BankCard from "./BankCard";
 
-const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
+const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
   return (
     <aside className="right-sidebar">
       <section className="flex flex-col pb-8">
@@ -59,4 +59,4 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
   );
 };
 
-export default RightSideBar;
+export default RightSidebar;
